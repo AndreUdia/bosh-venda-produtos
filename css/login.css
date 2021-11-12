@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(130deg, #1c809e, #aa09a2);
+    height: 100vh; /* evitar repetição do background */
+    overflow: hidden; /* evitar scroll desnecessário */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.box-login h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .campo-login{
+    position: relative;
+    border-bottom: 2px solid #c8c8c8;
+    margin: 30px 0;
+}
+
+form>p{
+    color: red;
+}
+
+.campo-login input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none; /* tira os contornos do input */
+}
+
+.campo-login label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #c8c8c8;
+    transform: translateY(-50%);
+    font-size: 16px;
+    transition: .5s; /* retardar o tempo da animação */
+}
+
+.campo-login span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #3394d4;
+    transition: .5s;
+}
+
+/* caso o input tenha dados ou estiver selecionado - transita para cima */
+.campo-login input:focus ~ label,
+.campo-login input:valid ~ label{
+    top: -5px;
+    color: #3394d4;
+}
+
+/* preencher a barra com a cor em efeito de transição */
+.campo-login input:focus ~ span::before,
+.campo-login input:valid ~ span::before{
+    width: 100%;
+}
+
+form button{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    font-size: 18px;
+    border-radius: 25px;
+    background: #3394d4;
+    font-weight: 700;
+    cursor: pointer;
+    color: #eff8fd;
+    margin-top: 10px;
+}
+
+form button:hover{
+    border-color: #3394d4;
+    transition: .5s;
+}
+
+.alternativa{
+    margin: 30px 50px;
+    text-align: left;
+    font-size: 16px;
+    color: #666666;
+}
+
+.alternativa a{
+    color: #3394d4;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.alternativa a:hover{
+    text-decoration: underline;
+}

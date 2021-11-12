@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/cadastro.js" defer></script>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="box-login">
+        <h1>Novo Cadastro</h1>
+        <form id="formulario" action="../index.html" method="post">
+            <div class="campo-login">
+                <input type="text" name="usuario" required>
+                <span></span>
+                <label for="usuario">Usuário</label>
+            </div>
+            <p class="erro-usuario"></p>
+            <div class="campo-login">
+                <input type="password" name="senha" required>
+                <span></span>
+                <label for="senha">Senha</label>
+            </div>
+            <p class="erro-senha"></p>
+            <div class="campo-login">
+                <input type="password" name="confirmarSenha" required>
+                <span></span>
+                <label for="confirmarSenha">Confirmar Senha</label>
+            </div>
+            <p class="erro-confirma-senha"></p>
+            <button type="button" onClick="confirmarCadastro()">Entrar</button>
+        </form>
+    </div>
+    <div id="snackbar">Cadastro Efetuado Com Sucesso!</div>
+</body>
+</html>
