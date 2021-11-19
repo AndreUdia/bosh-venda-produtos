@@ -1,0 +1,79 @@
+:root{ /* pseudoclass da tag html */
+    --cor-principal: #F92355;
+}
+
+@font-face {
+    font-family: "cream-cake";
+    src: url(../res/font/cream_cake.otf);
+}
+
+body{
+    margin: 0;
+}
+
+#divProdutos{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.card{
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    margin: 5px;
+    background-color: #069AF3;
+    float: left;
+}
+
+.card-img{
+    width: 100%;
+    height: 180px;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-descricao{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    color: #ffffff;
+}
+
+.card-comprar{
+    font-family: 'cream-cake';
+    font-size: 20px;
+    text-align: center;
+    background-color: #90fdab;
+    padding-top: 5px;
+    height: 30px;
+    color: #c97323;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-comprar:hover{
+    cursor: pointer;
+    border: 0.5px solid #87f6bb;
+    padding-top: 10px;
+    box-shadow: 0.5px 0.5px 1px 1px #87f6bb;
+}
+
+.card-comprado {
+    background-color: rgb(199, 30, 30);
+}
+
+.card-comprado:hover {
+    
+}
+
+#menu {
+    margin: 30px;
+    background-color: brown;
+}

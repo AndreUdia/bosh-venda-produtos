@@ -6,6 +6,7 @@ validarFormulario = () => {
         document.querySelector("form>p").innerHTML = "Usuário e senha inválidos!"
         return false;
     } else{
+        localStorage.setItem("usuarioLogado", JSON.stringify(usuario));
         document.getElementById("formulario").submit();
     }
 }
