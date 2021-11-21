@@ -4,14 +4,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
     <script src="../js/principal.js" defer></script>
     <title>Produtos</title>
 </head>
 <body>
-    <div id="menu">
-        <p class="usuLogado"></p>
+    <div class="menu">
+        <p class="msg-saudacao"></p>
+        <h6>SAIR</h6>
+        <img class="sair" onclick="sair()" src="../res/img/sair.jpg" alt="sair do site">
+        <img class="carrinho" src="../res/img/carrinho.jpg" alt="avatar usuário logado">
+        <span></span>
     </div>
     <div id="divProdutos">
     </div>
+    <div id="snackbar">Produto adicionado no carrinho!</div>
 </body>
 </html>

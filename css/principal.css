@@ -9,21 +9,26 @@
 
 body{
     margin: 0;
+    overflow: hidden
 }
 
 #divProdutos{
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: rgba(115, 199, 224, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: scroll;
 }
 
 .card{
     border-radius: 10px;
     width: 200px;
     height: 250px;
-    margin: 5px;
+    margin: 15px;
     background-color: #069AF3;
-    float: left;
+    
 }
 
 .card-img{
@@ -53,7 +58,7 @@ body{
     background-color: #90fdab;
     padding-top: 5px;
     height: 30px;
-    color: #c97323;
+    color: #173000;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -66,14 +71,60 @@ body{
 }
 
 .card-comprado {
-    background-color: rgb(199, 30, 30);
+    background-color: rgb(209, 45, 45);
+    color: white;
 }
 
-.card-comprado:hover {
-    
+
+.menu{
+    height: 40px;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-#menu {
-    margin: 30px;
-    background-color: brown;
+.menu p{
+    margin-right: 50%;
 }
+
+.menu .sair{
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.menu .carrinho{
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.menu span{
+    margin-right: 25px;
+    margin-left: 2px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    width: 20px;
+}
+
+.desc-prod{
+    font-weight: 700;
+    font-size: 2vh;
+    color: rgb(25, 5, 63);
+}
+
+
+
+
+
+
+
