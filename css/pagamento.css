@@ -1,0 +1,113 @@
+body{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    font-size: 10px;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.box-cartao {
+    border: 3px solid purple;
+    width: auto;
+    height: 550px;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.formpagamento{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+
+}
+
+.formpagamento button{
+    float: right;
+    margin-top: 40px;
+    height: 35px;
+    width: 100%;
+    background-color: lightblue;
+    border: none;
+    border-radius: 3px;
+}
+
+.campo{
+    margin-top: 30px;
+}
+
+.campo input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: 0.1px dotted grey;
+    background: none;
+    outline: none;
+}
+
+.cartao{
+    height: 200px;
+    width: 350px;
+    border: 1px solid white;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 6px;
+    background: linear-gradient(130deg, #1c809e, #aa09a2);
+    color: white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+
+.cartao img{
+    height: 25px;
+    width: 35px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    background-color: white;
+}
+
+.cartao #bandeira{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.cartao #nome{
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+}
+
+.cartao #numero{
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+
+.cartao #data{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.cartao #vencimento{
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+}

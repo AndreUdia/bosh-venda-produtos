@@ -1,0 +1,42 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/pagamento.js"></script>
+    <link rel="stylesheet" href="../css/pagamento.css">
+    <title>Pagamento</title>
+    
+</head>
+<body>
+    <div class="box-cartao">
+        <div class="cartao">
+            <img src="../res/img/credit-card.png" alt="chip do cartao">
+            <p id="bandeira">VISA</p>
+            <p id="nome">NOME NO CARTAO</p>
+            <p id="vencimento">VENCIMENTO</p>
+            <p id="numero">0000 0000 0000 0000</p>
+            <p id="data">mm/aa</p>
+        </div>
+        <form class="formpagamento">
+            <div class="campo">
+                <input type="text" placeholder="nome"/>
+            </div>
+            <div class="campo">
+                <input type="date" placeholder="Vencimento"/>
+            </div>
+            <div class="campo">
+                <input type="text" placeholder="numero"/>
+            </div>
+            <button onclick="submeter()">FINALIZAR</button>
+        </form>
+    </div>
+
+
+    <footer id="footer">
+        <p>Icons made by</p> 
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+         from <a href="https://www.flaticon.com/" title="Flaticon">
+             www.flaticon.com</a></footer>
+</body>
+</html>
